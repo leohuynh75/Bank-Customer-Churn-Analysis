@@ -4,7 +4,7 @@
 The project aims to build a churn analysis dashboard system for banking customers to help businesses identify customer groups at high risk of leaving, understand their behavioral characteristics, and develop appropriate retention strategies. This dashboard helps sales and customer care departments make faster decisions based on real data, while improving customer retention and optimizing marketing costs.
 
 ## Data source
-For the data source, get the dataset here: [LINK](https://drive.google.com/file/d/1SWjBoeVXciPHSzmW0SzFxUcAk4V7-KuE/view?usp=drive_link)
+For the data source, get the dataset of 10,000 records here: [LINK](https://drive.google.com/file/d/1SWjBoeVXciPHSzmW0SzFxUcAk4V7-KuE/view?usp=drive_link)
 
 And here is the data description:
 - RowNumber: The index of the row
@@ -52,11 +52,18 @@ And here is the data description:
       - The age group from 39-48 and 49-58 have the highest churn (804 and 532 people respectively)
       - The younger (18-28) and older (69+) groups have low churn
     - By Number of Products:
-      - Customer with 1-2 products are the main churn group
-      - The group with 3+ products churns much less, but the number of retained customers also really low. In particular, the group of 4 products had no retained customers, showing an almost absolute churn potential.
+      - While customers with 1–2 products accounted for over 80% of total churn volume, detailed analysis revealed that customers with 2 products had the lowest churn rate (~7.6%) among all groups. This suggests a “sweet spot” for customer retention. Meanwhile, customers with 3+ products showed extremely high churn rates despite low volume, indicating potential dissatisfaction among highly engaged users.
     - By account balance:
       - Customers with balance from 100K-150K churn the most.
     - By countries (map):
       - Churn is distributed by European countries. Specifically, France and Germany have the highest churn rate, with 811 and 814 people. Meanwhile, Spain has the lowest churn, with only 413.
 
 ### 3. Actionable Insights
+- Increase engagement:
+  - Churn rate is higher in inactive customers => Reactivation strategies such as: sending offers, reminders or personalized calls are needed.
+- Targeting the middle-aged group:
+  - The 39-58 age group has the highest churn => Create a specialized retention program for this group: interest rate incentives, age-appropriate products, customer care priority.
+- Focus retention efforts on the largest churn contributors (1–2 products), while promoting two-product bundling as an optimal engagement strategy.
+- Investigate service issues or misaligned expectations in the 3+ product segment to prevent high-value customer loss. This group may be being over cross-sold, leading to overload or lack of real value. This customer service for this group is not properly personalized. Some products may provide an uneven experience, causing customers to lose trust and leave in droves.
+- Further analysis of balance:
+  - The balance group from 100K-150K has high churn => Check if there are any problems such as: interest rate are not competitive ? services are not yet satisfactory ?
